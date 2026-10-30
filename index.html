@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d1b">
+  <meta name="description" content="OOPS INU community hub — memes, community missions, and transparent token data.">
+  <title>OOPS INU — Meme responsibly. Expect chaos.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="OOPS INU home">
+      <span class="brand-mark">O!</span><span>OOPS<span class="orange">INU</span><small>MEME RESPONSIBLY</small></span>
+    </a>
+    <nav class="desktop-nav">
+      <a href="shop.html">Shop</a><a href="#dashboard">Dashboard</a><a href="#studio">Meme studio</a><a href="#missions">Missions</a><a href="#community">Community</a>
+    </nav>
+    <div class="header-actions">
+      <button id="authOpen" class="btn btn-ghost">Sign in</button>
+      <button id="walletBtn" class="btn btn-outline">Connect wallet</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> THE INTERNET'S OFFICIAL PLAN B</div>
+        <h1>Oops.<br><span class="gradient-text">We did it again.</span></h1>
+        <p class="hero-lede">A meme community for the gloriously imperfect. Make memes, complete community missions, and bring your best chaos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" id="buyHero" href="https://pump.fun/" target="_blank" rel="noopener noreferrer">Explore on Pump.fun <span>↗</span></a>
+          <a class="btn btn-ghost" href="#studio">Make a meme ↓</a>
+        </div>
+        <div class="hero-note"><span class="mono">NO PROMISED RETURNS.</span> Just memes, community, and transparent data.</div>
+      </div>
+      <div class="mascot-stage">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="mascot-card">
+          <div class="mascot-spark spark-one">✦</div><div class="mascot-spark spark-two">✳</div>
+          <svg class="mascot" viewBox="0 0 300 300" role="img" aria-label="Original orange Oopsie mascot">
+            <defs>
+              <linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffbd55"/><stop offset=".55" stop-color="#ff7b31"/><stop offset="1" stop-color="#e84924"/></linearGradient>
+              <linearGradient id="ear" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff8a42"/><stop offset="1" stop-color="#c8342a"/></linearGradient>
+            </defs>
+            <path d="M74 84 Q35 38 27 74 Q24 111 76 124Z" fill="url(#ear)" stroke="#20142b" stroke-width="8"/>
+            <path d="M220 91 Q264 35 272 76 Q278 113 224 130Z" fill="url(#ear)" stroke="#20142b" stroke-width="8"/>
+            <path d="M74 102 Q56 76 46 81 Q43 99 75 113Z" fill="#ffb17a"/>
+            <path d="M224 110 Q247 77 257 83 Q257 101 224 121Z" fill="#ffb17a"/>
+            <path d="M68 104 Q73 61 118 57 Q156 39 191 63 Q228 69 235 110 L226 190 Q213 233 155 242 Q97 235 77 197Z" fill="url(#fur)" stroke="#20142b" stroke-width="9"/>
+            <path d="M97 115 Q105 91 127 105 Q143 120 129 148 Q111 163 98 143Z" fill="#fff8e9" stroke="#20142b" stroke-width="7"/>
+            <path d="M165 107 Q187 84 204 106 Q214 127 196 151 Q175 160 164 137Z" fill="#fff8e9" stroke="#20142b" stroke-width="7"/>
+            <ellipse cx="119" cy="127" rx="8" ry="12" fill="#20142b"/><ellipse cx="190" cy="128" rx="8" ry="12" fill="#20142b"/>
+            <circle cx="122" cy="122" r="3" fill="#fff"/><circle cx="193" cy="123" r="3" fill="#fff"/>
+            <path d="M137 157 Q151 145 165 158 Q161 178 149 179 Q137 176 137 157Z" fill="#542033" stroke="#20142b" stroke-width="5"/>
+            <path d="M104 181 Q147 211 190 178 Q183 220 148 219 Q117 215 104 181Z" fill="#fff0dc" stroke="#20142b" stroke-width="6"/>
+            <path d="M144 189 L151 204 L160 189" fill="#ff8c83"/>
+            <path d="M91 158 Q75 152 70 168 M207 160 Q226 151 230 166" fill="none" stroke="#20142b" stroke-width="7" stroke-linecap="round"/>
+            <path d="M90 79 L103 62 M205 73 L217 58" stroke="#ffdb86" stroke-width="6" stroke-linecap="round"/>
+            <path d="M84 237 Q64 254 68 267 Q93 275 112 252 M212 237 Q235 250 232 267 Q211 278 192 253" fill="#ff7b31" stroke="#20142b" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+          <div class="mascot-label"><span class="pulse"></span> OOPSIE IS ONLINE</div>
+        </div>
+        <div class="float-chip chip-top">CHAOS: 100%</div><div class="float-chip chip-bottom">PLAN A FAILED ✓</div>
+      </div>
+    </section>
+
+    <section class="stats wrap" id="dashboard">
+      <div class="section-head">
+        <div><div class="eyebrow">ON-CHAIN TRANSPARENCY</div><h2>Real data. <span class="muted">No made-up numbers.</span></h2></div>
+        <span class="status-pill"><span class="live-dot"></span><span id="dataStatus">Token address not configured</span></span>
+      </div>
+      <div class="stat-grid">
+        <article class="stat-card"><span class="stat-label">TOKEN PRICE</span><strong id="priceValue">—</strong><small id="priceSub">Connect a verified token address</small></article>
+        <article class="stat-card"><span class="stat-label">MARKET CAP / FDV</span><strong id="capValue">—</strong><small>Source field shown when provided by DEX Screener</small></article>
+        <article class="stat-card"><span class="stat-label">24H VOLUME</span><strong id="volumeValue">—</strong><small id="volumeSub">No token data loaded</small></article>
+        <article class="stat-card"><span class="stat-label">LIQUIDITY</span><strong id="liquidityValue">—</strong><small>Displayed when a real pair exists</small></article>
+      </div>
+      <div class="data-foot"><span>Data source: DEX Screener API</span><span id="updatedAt">No live data request made yet.</span></div>
+      <div class="notice" id="tokenNotice"><span>ⓘ</span><p><b>Setup required:</b> add the real Solana token mint address in <code>config.js</code> after the coin is created. Until then, market values stay blank by design.</p></div>
+    </section>
+
+    <section class="studio wrap" id="studio">
+      <div class="section-head">
+        <div><div class="eyebrow">YOUR TURN TO COOK</div><h2>Meme <span class="gradient-text">studio.</span></h2></div>
+        <p class="section-desc">Make a shareable OOPS moment. Download it and post it anywhere.</p>
+      </div>
+      <div class="studio-grid">
+        <div class="studio-controls">
+          <label for="memeTop">Top caption</label><input id="memeTop" maxlength="70" value="I HAD A PLAN">
+          <label for="memeBottom">Bottom caption</label><input id="memeBottom" maxlength="70" value="THE PLAN HAD OTHER PLANS">
+          <label for="memeMood">Mascot mood</label>
+          <select id="memeMood"><option value="oops">Oops face</option><option value="win">Fake confidence</option><option value="panic">Full panic</option></select>
+          <button id="makeMeme" class="btn btn-primary full">Generate meme ↗</button>
+          <p class="small muted">Your meme is generated in your browser. No upload required.</p>
+        </div>
+        <div class="meme-preview"><canvas id="memeCanvas" width="900" height="900" aria-label="Meme preview"></canvas><button id="downloadMeme" class="btn btn-outline full">Download PNG ↓</button></div>
+      </div>
+    </section>
+
+    <section class="missions wrap" id="missions">
+      <div class="section-head"><div><div class="eyebrow">SMALL QUESTS, BIG ENERGY</div><h2>Community <span class="gradient-text">missions.</span></h2></div><span class="status-pill">Demo points are local only</span></div>
+      <div class="mission-grid">
+        <article class="mission-card"><div class="mission-icon">✦</div><div class="mission-points">+10 PTS</div><h3>Make your first meme</h3><p>Generate and download an OOPS meme.</p><button class="btn btn-outline mission-btn" data-mission="meme">Complete mission</button></article>
+        <article class="mission-card"><div class="mission-icon">↗</div><div class="mission-points">+5 PTS</div><h3>Meet the community</h3><p>Visit the official social links when configured.</p><button class="btn btn-outline mission-btn" data-mission="community">Complete mission</button></article>
+        <article class="mission-card"><div class="mission-icon">◎</div><div class="mission-points">+15 PTS</div><h3>Connect your wallet</h3><p>Connect Phantom to prove wallet access. No transaction required.</p><button class="btn btn-outline mission-btn" data-mission="wallet">Complete mission</button></article>
+      </div>
+      <p class="small muted">Points currently live in this browser only. They are not token rewards and do not sync across users until Supabase is configured.</p>
+    </section>
+
+    <section class="community wrap" id="community">
+      <div class="community-panel">
+        <div><div class="eyebrow">THE OOPS ARMY</div><h2>Join the chaos.<br><span class="gradient-text">Bring a meme.</span></h2><p>Community links will be enabled when the official accounts are created and added to the configuration.</p></div>
+        <div class="social-actions"><a class="btn btn-primary" id="pumpFooter" href="https://pump.fun/" target="_blank" rel="noopener noreferrer">Pump.fun ↗</a><button class="btn btn-outline" id="copyAddress">Copy token address</button></div>
+      </div>
+      <div class="community-meta"><span>OOPS INU HUB · V1</span><span>Built for the internet, not financial promises.</span></div>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand mini" href="#home"><span class="brand-mark">O!</span><span>OOPS<span class="orange">INU</span></span></a><span>Memes are forever. Markets are not.</span><a href="#risk">Risk note ↓</a></footer>
+  <section class="risk wrap" id="risk"><p><b>Risk notice:</b> OOPS INU is a speculative meme-token concept. No returns, liquidity, listing, or future value are guaranteed. Token data appears only after a valid token address is configured and a real market pair is found. Do your own research and never risk money you cannot afford to lose.</p></section>
+
+  <dialog id="authDialog">
+    <form method="dialog" class="dialog-close"><button aria-label="Close">×</button></form>
+    <div class="eyebrow">OOPS ARMY ACCESS</div><h2>Sign in <span class="gradient-text">or join.</span></h2>
+    <p class="muted small">Real account login needs your Supabase project configuration. Until configured, this form will not pretend to create an account.</p>
+    <form id="authForm">
+      <label for="authEmail">Email</label><input type="email" id="authEmail" required placeholder="you@example.com">
+      <label for="authPassword">Password</label><input type="password" id="authPassword" required minlength="8" placeholder="At least 8 characters">
+      <div class="dialog-buttons"><button class="btn btn-primary" type="submit" id="signInBtn">Sign in</button><button class="btn btn-outline" type="button" id="signUpBtn">Create account</button></div>
+    </form>
+    <p id="authMessage" class="small" role="status"></p>
+  </dialog>
+  <div id="toast" role="status" class="toast"></div>
+  <script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>

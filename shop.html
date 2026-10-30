@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OOPS INU Shop — Characters & NFT Items</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.shop-wrap{width:min(1160px,calc(100% - 32px));margin:32px auto}.shop-head{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:24px}.shop-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.product{background:#191426;border:1px solid #433353;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:12px}.product-art{aspect-ratio:1;background:radial-gradient(circle,#55306e,#171222);border-radius:13px;display:grid;place-items:center;font-size:74px}.product h3{margin:0}.product p{color:#aaa1bb;font-size:13px;line-height:1.6;margin:0;flex:1}.product .price{font-weight:700;color:#ffc56c}.shop-status{border:1px solid #433353;border-radius:12px;padding:14px;margin:16px 0;color:#d9d0e5;font-size:13px;line-height:1.7}.shop-status.error{border-color:#9b4a55}.inventory{margin-top:32px}.inventory-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.inventory-item{border:1px solid #433353;border-radius:12px;padding:14px;overflow-wrap:anywhere}.inventory-item small{color:#aaa1bb}.disabled-note{color:#aaa1bb;font-size:12px}@media(max-width:700px){.shop-grid,.inventory-list{grid-template-columns:1fr 1fr}}@media(max-width:460px){.shop-grid,.inventory-list{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark">O!</span><span>OOPS<span class="orange">INU</span><small>CHARACTER SHOP</small></span></a>
+  <nav class="desktop-nav"><a href="index.html">Home</a><a href="#catalog">Shop</a><a href="#inventory">My inventory</a></nav>
+  <button id="connectWallet" class="btn btn-outline">Connect Phantom</button>
+</header>
+<main class="shop-wrap">
+  <section class="shop-head"><div><div class="eyebrow">COLLECT YOUR CHAOS</div><h1>Characters & <span class="gradient-text">NFT items.</span></h1><p class="muted">Pay in SOL. NFT delivery only appears after on-chain payment verification and successful minting.</p></div><a class="btn btn-primary" href="https://pump.fun/" target="_blank" rel="noopener noreferrer">OOPS INU on Pump.fun ↗</a></section>
+  <div id="shopStatus" class="shop-status">Shop is in setup mode. Connect the backend, treasury wallet, NFT signer, metadata storage, and database before accepting payments.</div>
+  <section id="catalog" class="shop-grid" aria-label="Product catalog"></section>
+  <section id="inventory" class="inventory"><div class="eyebrow">YOUR COLLECTION</div><h2>My NFT inventory</h2><p class="disabled-note">Connect a wallet and load verified NFTs from the configured asset indexer. This page will never invent owned items.</p><div id="inventoryList" class="inventory-list"><div class="inventory-item">No verified inventory loaded yet.</div></div></section>
+  <section class="risk"><p><b>Notice:</b> Prices are shown in SOL and may be changed before launch. NFTs are digital collectibles, not investments. No financial return is promised. A transaction signature alone is not enough to claim delivery; the server must verify the confirmed transfer and mint the NFT.</p></section>
+</main>
+<script src="shop-config.js"></script><script src="shop.js"></script>
+</body></html>
