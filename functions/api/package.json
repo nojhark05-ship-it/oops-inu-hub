@@ -1,0 +1,22 @@
+{
+  "name": "oops-inu-shop-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@metaplex-foundation/mpl-core": "^1.0.0",
+    "@metaplex-foundation/umi": "^1.0.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.0.0",
+    "@metaplex-foundation/umi-signer-wallet-adapters": "^1.0.0",
+    "@supabase/supabase-js": "^2.0.0",
+    "@solana/web3.js": "^1.98.0",
+    "bs58": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "zod": "^3.24.0",
+    "@metaplex-foundation/umi-web3js-adapters": "^1.0.0"
+  }
+}
